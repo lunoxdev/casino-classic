@@ -20,23 +20,25 @@
 
 /* H1 Animation */
 @keyframes animation-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  to {
+    background-position: 200% center;
   }
 }
 
 h1 {
-  background: linear-gradient(-45deg, #003d0a, #00ff41, #39ff14, #004d40);
-  background-size: 400% 400%;
-  animation: animation-gradient 4s ease infinite;
+  background: radial-gradient(
+    circle at 100%,
+    #006212,
+    #00e139 50%,
+    #00e139 75%,
+    #006212
+  );
+  animation: animation-gradient 5s linear infinite;
   background-clip: text;
   color: transparent;
+  background-size: 200% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 /* Carousel Animation */
