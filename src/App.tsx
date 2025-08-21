@@ -38,7 +38,7 @@ function App() {
           CLASSIC CASINO
         </h1>
 
-        <Carousel games={games} onGamePlay={handleGamePlay} />
+        <Carousel games={gamesData} onGamePlay={handleGamePlay} />
 
         <HeaderBar
           resetFilter={resetFilter}
