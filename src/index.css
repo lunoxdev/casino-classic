@@ -18,6 +18,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* H1 Animation */
 @keyframes animation-gradient {
   0% {
     background-position: 0% 50%;
@@ -36,4 +37,22 @@ h1 {
   animation: animation-gradient 4s ease infinite;
   background-clip: text;
   color: transparent;
+}
+
+/* Carousel Animation */
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 30s linear infinite;
+}
+
+.pause-animation:hover {
+  animation-play-state: paused;
 }

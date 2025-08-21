@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 import GameGrid from "./components/GameGrid";
 import HeaderBar from "./components/HeaderBar";
 import Background from "./components/Background";
+import Carousel from "./components/Carousel";
 
 function App() {
   const [games, setGames] = useState<Games[]>(gamesData);
@@ -33,6 +34,12 @@ function App() {
     <div className="mx-auto w-full sm:w-7xl">
       <Background />
       <header>
+        <h1 className="my-2 sm:my-4 text-4xl sm:text-5xl font-semibold">
+          CLASSIC CASINO
+        </h1>
+
+        <Carousel games={games} onGamePlay={handleGamePlay} />
+
         <HeaderBar
           resetFilter={resetFilter}
           handleGamesFilter={handleGamesFilter}
