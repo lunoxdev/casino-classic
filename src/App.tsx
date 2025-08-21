@@ -4,6 +4,7 @@ import { type Games } from "./types";
 import { useNavigate } from "react-router";
 import GameGrid from "./components/GameGrid";
 import HeaderBar from "./components/HeaderBar";
+import Background from "./components/Background";
 
 function App() {
   const [games, setGames] = useState<Games[]>(gamesData);
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div className="mx-auto w-full sm:w-7xl">
+      <Background />
       <header>
         <HeaderBar
           resetFilter={resetFilter}
