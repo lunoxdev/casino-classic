@@ -15,19 +15,21 @@ const HeaderBar = ({
 }: HeaderBarProps) => {
   return (
     <>
-      <h1 className="mb-2 text-4xl">Classic Casino</h1>
+      <h1 className="my-2 sm:my-4 text-4xl sm:text-5xl font-semibold">
+        CLASSIC CASINO
+      </h1>
       <div className="relative flex justify-end items-center">
         <input
           type="text"
           placeholder="Search Game"
           value={resetFilter}
           onChange={handleGamesFilter}
-          className="text-center bg-black/20 outline-none focus:border focus:border-sky-500 rounded-lg px-2 sm:px-4 py-1 sm:py-2 transition duration-300"
+          className="text-center bg-black/20 outline-none focus:border focus:border-[#00ff41] rounded-lg px-2 sm:px-4 py-1 sm:py-2 transition duration-300"
         />
         {showResetButton && (
           <button
             onClick={handleResetFilter}
-            className="text-sm sm:text-base font-bold absolute right-7 cursor-pointer hover:opacity-80"
+            className="text-sm sm:text-base font-bold absolute right-7 cursor-pointer hover:text-[#00ff41]"
           >
             X
           </button>

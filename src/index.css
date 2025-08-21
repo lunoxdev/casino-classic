@@ -9,13 +9,31 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  padding: 1rem;
+  text-align: center;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  padding: 1rem;
-  text-align: center;
+@keyframes animation-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  background: linear-gradient(-45deg, #003d0a, #00ff41, #39ff14, #004d40);
+  background-size: 400% 400%;
+  animation: animation-gradient 4s ease infinite;
+  background-clip: text;
+  color: transparent;
 }
