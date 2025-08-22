@@ -17,7 +17,7 @@ const Carousel = ({ games, onGamePlay }: GamesGridProps) => {
               src={game.cover}
               width={134}
               height={205}
-              className="w-16 sm:w-24 rounded-sm cursor-pointer group-hover:opacity-50 hover:!opacity-100 hover:scale-105 transition duration-300"
+              className="w-20 sm:w-24 rounded-sm cursor-pointer group-hover:opacity-50 hover:!opacity-100 hover:scale-105 transition duration-300"
             />
           );
         })}
