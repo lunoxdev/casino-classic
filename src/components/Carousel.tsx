@@ -8,7 +8,7 @@ interface GamesGridProps {
 const Carousel = ({ games, onGamePlay }: GamesGridProps) => {
   return (
     <section className="flex relative overflow-hidden my-6 sm:my-8">
-      <div className="flex flex-row shrink-0 space-x-4 animate-carousel hover:pause-animation">
+      <div className="flex flex-row shrink-0 space-x-4 animate-carousel hover:pause-animation my-2">
         {games.map((game, index) => {
           return (
             <img
