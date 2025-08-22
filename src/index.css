@@ -6,7 +6,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffffde;
   background-color: #242424;
 
   padding: 1rem;
@@ -28,10 +28,10 @@
 h1 {
   background: radial-gradient(
     circle at 100%,
-    #006212,
-    #00e139 50%,
-    #00e139 75%,
-    #006212
+    #8B4513,
+    #FFD700 50%,
+    #FFA500 75%,
+    #8B4513
   );
   animation: animation-gradient 5s linear infinite;
   background-clip: text;
