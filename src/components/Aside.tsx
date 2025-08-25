@@ -19,21 +19,19 @@ const Aside = () => {
       </section>
 
       {/* Navigation */}
-      <nav className="flex flex-col space-y-4 shrink-0 items-start mt-5 text-lg">
-        <section className="flex flex-col items-start space-y-5 w-full">
-          <a
-            href="#"
-            className="bg-gradient-to-l from-[#2dd138] to-transparent px-4 py-2 rounded-md font-bold w-full text-start cursor-pointer"
-          >
-            🎯 Picks for you
-          </a>
-          <a href="#" className="cursor-not-allowed">
-            ⭐️ Favorites
-          </a>
-          <a href="#" className="cursor-not-allowed">
-            🕓 Recents
-          </a>
-        </section>
+      <nav className="flex flex-col space-y-5 shrink-0 items-start mt-5 text-lg">
+        <a
+          href="#"
+          className="bg-gradient-to-l from-[#2dd138] to-transparent px-4 py-2 rounded-md font-bold w-full text-start cursor-pointer"
+        >
+          🎯 Picks for you
+        </a>
+        <a href="#" className="cursor-not-allowed">
+          ⭐️ Favorites
+        </a>
+        <a href="#" className="cursor-not-allowed">
+          🕓 Recents
+        </a>
       </nav>
 
       {/* Promo banners */}
