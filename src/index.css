@@ -27,13 +27,6 @@ h1 {
 
 /* Text Gradient Animation */
 .animatimate-text-gradient {
-  background: radial-gradient(
-    circle at 100%,
-    #8b4513,
-    #ffd700 50%,
-    #ffa500 75%,
-    #8b4513
-  );
   animation: animatimate-text-gradient 5s linear infinite;
   background-clip: text;
   color: transparent;
