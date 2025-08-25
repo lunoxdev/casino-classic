@@ -37,7 +37,7 @@ const Aside = () => {
       </nav>
 
       {/* Promo banners */}
-      <section className="mt-14 mb-7 space-y-5">
+      <section className="mt-10 mb-7 space-y-7">
         <img
           src={pokerBanner}
           alt="Poker Banner"
