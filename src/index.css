@@ -18,22 +18,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* H1 Animation */
-@keyframes animation-gradient {
-  to {
-    background-position: 200% center;
-  }
+h1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent, #2dd138, transparent);
+  border-image-slice: 1;
 }
 
-h1 {
+/* Text Gradient Animation */
+.animatimate-text-gradient {
   background: radial-gradient(
     circle at 100%,
-    #8B4513,
-    #FFD700 50%,
-    #FFA500 75%,
-    #8B4513
+    #8b4513,
+    #ffd700 50%,
+    #ffa500 75%,
+    #8b4513
   );
-  animation: animation-gradient 5s linear infinite;
+  animation: animatimate-text-gradient 5s linear infinite;
   background-clip: text;
   color: transparent;
   background-size: 200% auto;
@@ -41,7 +42,21 @@ h1 {
   -webkit-background-clip: text;
 }
 
+@keyframes animatimate-text-gradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
 /* Carousel Animation */
+.animate-carousel {
+  animation: carousel 30s linear infinite;
+}
+
+.pause-animation:hover {
+  animation-play-state: paused;
+}
+
 @keyframes carousel {
   0% {
     transform: translateX(0);
@@ -49,12 +64,4 @@ h1 {
   100% {
     transform: translateX(-50%);
   }
-}
-
-.animate-carousel {
-  animation: carousel 30s linear infinite;
-}
-
-.pause-animation:hover {
-  animation-play-state: paused;
 }

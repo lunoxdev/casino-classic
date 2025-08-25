@@ -20,7 +20,7 @@ const HeaderBar = ({
         placeholder="Search Game"
         value={resetFilter}
         onChange={handleGamesFilter}
-        className="text-center bg-black/20 outline-none focus:border focus:border-[#00ff41] rounded-lg px-2 sm:px-4 py-1 sm:py-2 transition duration-300"
+        className="text-center bg-green-800/50 outline-none focus:border focus:border-[#00ff41] rounded-lg px-2 sm:px-4 py-1 sm:py-2 transition duration-300"
       />
       {showResetButton && (
         <button
