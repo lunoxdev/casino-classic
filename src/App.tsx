@@ -7,6 +7,7 @@ import HeaderBar from "./components/HeaderBar";
 import Background from "./components/Background";
 import Carousel from "./components/Carousel";
 import muzanVideo from "./assets/muzan-video.mp4";
+import Aside from "./components/Aside";
 
 function App() {
   const [games, setGames] = useState<Games[]>(gamesData);
@@ -34,11 +35,7 @@ function App() {
   return (
     <div className="mx-auto w-full sm:w-7xl flex">
       <Background />
-      <aside className="hidden lg:block w-60 bg-green-800/50 rounded-xl p-4 mr-6">
-        <h1 className="animatimate-text-gradient bg-gradient-to-r from-[#0d4f1c] via-[#2dd138] via-50% to-[#0d4f1c] text-5xl font-bold">
-          CASINO
-        </h1>
-      </aside>
+      <Aside />
       <div className="flex-1">
         <header>
           {/* Hero */}
