@@ -18,7 +18,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+.divider-line {
   padding-bottom: 10px;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, transparent, #2dd138, transparent);

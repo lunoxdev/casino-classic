@@ -2,6 +2,7 @@ import { useState } from "react";
 import pokerBanner from "../assets/banners/poker-banner.webp";
 import casinoBanner from "../assets/banners/casino-banner.webp";
 import tournamentBanner from "../assets/banners/tournament-banner.webp";
+import GithubCard from "./GithubCard";
 
 const Aside = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -26,13 +27,13 @@ const Aside = () => {
 
       <aside
         className={`
-          fixed top-0 left-0 h-full w-64 bg-green-800/90 space-y-5 p-4 z-50
+          fixed top-0 left-0 h-full w-60 bg-green-800/90 space-y-5 p-4 z-50
           transform transition-transform duration-300
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0 lg:relative lg:h-auto lg:w-60 lg:bg-green-800/50 lg:rounded-xl lg:mr-6
         `}
       >
-        <h1 className="animatimate-text-gradient bg-gradient-to-r from-[#179133] via-[#32ee3f] to-[#179133] text-4xl font-extrabold">
+        <h1 className="divider-line animatimate-text-gradient bg-gradient-to-r from-[#179133] via-[#32ee3f] to-[#179133] text-4xl font-extrabold">
           CASINO
         </h1>
 
@@ -60,7 +61,9 @@ const Aside = () => {
           </a>
         </nav>
 
-        <section className="mt-10 mb-7 space-y-7">
+        <div className="divider-line animate-pulse" />
+
+        <section className="space-y-4 sm:space-y-7">
           <img
             src={pokerBanner}
             alt="Poker Banner"
@@ -77,6 +80,10 @@ const Aside = () => {
             className="rounded-md w-full shadow-green-300 shadow-lg hover:animate-pulse hover:scale-105 hover:transition-transform duration-300 cursor-pointer mt-4"
           />
         </section>
+
+        <div className="divider-line animate-pulse" />
+
+        <GithubCard />
       </aside>
     </>
   );
