@@ -8,6 +8,7 @@ import Background from "./components/Background";
 import Carousel from "./components/Carousel";
 import muzanVideo from "./assets/muzan-video.mp4";
 import Aside from "./components/Aside";
+import Sparkle from "react-sparkle";
 
 function App() {
   const [games, setGames] = useState<Games[]>(gamesData);
@@ -61,8 +62,13 @@ function App() {
 
               <div className="flex items-center w-full">
                 <span className="text-sm sm:text-base">🏆</span>
-                <div className="flex-1 bg-[#0d4f1c] rounded-full h-2 sm:h-3 overflow-hidden ml-2">
-                  <div className="h-full w-[65%] bg-gradient-to-r from-emerald-400 to-emerald-600" />
+
+                <div className="relative flex-1 bg-[#0d4f1c] rounded-full h-2 sm:h-3 overflow-hidden ml-2">
+                  <div className="absolute inset-0 z-10 pointer-events-none [clip-path:inset(0_35%_0_0)]">
+                    <Sparkle color={"#ffd700"} />
+                  </div>
+
+                  <div className="relative h-full w-[65%] bg-gradient-to-r from-emerald-400 to-emerald-600" />
                 </div>
               </div>
             </div>
