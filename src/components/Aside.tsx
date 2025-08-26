@@ -32,7 +32,7 @@ const Aside = () => {
           lg:translate-x-0 lg:relative lg:h-auto lg:w-60 lg:bg-green-800/50 lg:rounded-xl lg:mr-6
         `}
       >
-        <h1 className="animatimate-text-gradient bg-gradient-to-r from-[#0d4f1c] via-[#2dd138] via-50% to-[#0d4f1c] text-4xl font-extrabold">
+        <h1 className="animatimate-text-gradient bg-gradient-to-r from-[#179133] via-[#32ee3f] to-[#179133] text-4xl font-extrabold">
           CASINO
         </h1>
 
