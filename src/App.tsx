@@ -50,11 +50,21 @@ function App() {
                 className="relative w-full h-full rounded-full object-cover"
               />
             </div>
-            <div className="flex flex-col text-start">
-              <span className="text-lg font-semibold">Muzan Kibutsuji</span>
-              <span className="animatimate-text-gradient bg-gradient-to-r from-[#8b4513] via-[#ffd700] via-50% to-[#8b4513] text-2xl font-bold">
-                $1000
-              </span>
+
+            <div className="flex flex-col justify-between text-start">
+              <div className="flex flex-col">
+                <span className="text-sm font-semibold">Muzan Kibutsuji</span>
+                <span className="animatimate-text-gradient bg-gradient-to-r from-[#8b4513] via-[#ffd700] via-50% to-[#8b4513] text-base sm:text-lg font-bold">
+                  $1000
+                </span>
+              </div>
+
+              <div className="flex items-center w-full">
+                <span className="text-sm sm:text-base">🏆</span>
+                <div className="flex-1 bg-[#0d4f1c] rounded-full h-2 sm:h-3 overflow-hidden ml-2">
+                  <div className="h-full w-[65%] bg-gradient-to-r from-emerald-400 to-emerald-600" />
+                </div>
+              </div>
             </div>
           </section>
 
