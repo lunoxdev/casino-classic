@@ -13,10 +13,10 @@ const GameGrid = ({ games, onGamePlay }: GamesGridProps) => {
   }
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-5 my-5 group">
+    <section className="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-5 my-5 group">
       {games.map((game, index) => {
         return (
-          <div
+          <button
             key={index}
             className="w-full"
             onClick={() => onGamePlay(game.url)}
@@ -27,10 +27,10 @@ const GameGrid = ({ games, onGamePlay }: GamesGridProps) => {
               height={505}
               className="rounded-xl mb-2 cursor-pointer group-hover:opacity-50 hover:!opacity-100 hover:scale-105 transition duration-300"
             />
-          </div>
+          </button>
         );
       })}
-    </div>
+    </section>
   );
 };
 

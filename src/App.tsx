@@ -10,6 +10,8 @@ import muzanVideo from "./assets/muzan-video.mp4";
 import Aside from "./components/Aside";
 import Sparkle from "react-sparkle";
 
+import colorGuessGame from "./../public/games/color-guess-game.webp";
+
 function App() {
   const [games, setGames] = useState<Games[]>(gamesData);
   const [resetFilter, setResetFilter] = useState<string>("");
@@ -75,6 +77,27 @@ function App() {
           </section>
 
           <Carousel games={gamesData} onGamePlay={handleGamePlay} />
+
+          <section className="flex flex-col text-start w-full">
+            <h2 className="animatimate-text-gradient bg-gradient-to-r from-[#2dd138] via-[#ffd700] via-50% to-[#2dd138] text-base sm:text-lg font-bold">
+              MY PIXIJS GAMES
+            </h2>
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-5 my-3 sm:my-5">
+              <button
+                className="w-full"
+                onClick={() =>
+                  handleGamePlay("https://color-guess-pixijs-game.vercel.app/")
+                }
+              >
+                <img
+                  src={colorGuessGame}
+                  width={384}
+                  height={505}
+                  className="rounded-xl mb-2 cursor-pointer hover:scale-105 transition duration-300"
+                />
+              </button>
+            </div>
+          </section>
 
           <HeaderBar
             resetFilter={resetFilter}
